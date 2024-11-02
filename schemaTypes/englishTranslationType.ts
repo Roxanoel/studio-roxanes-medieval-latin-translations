@@ -1,4 +1,5 @@
 import {defineField, defineType} from 'sanity'
+import {LuFileDigit, LuMessageCircle} from 'react-icons/lu'
 
 // Components
 import FolioReference from '../components/decorators/FolioReference/FolioReference.jsx'
@@ -41,7 +42,12 @@ export const englishTranslationType = defineType({
           type: 'block',
           marks: {
             decorators: [
-              {title: 'Folio Reference', value: 'folioReference', component: FolioReference},
+              {
+                title: 'Folio Reference',
+                value: 'folioReference',
+                component: FolioReference,
+                icon: LuFileDigit,
+              },
               {title: 'Bold', value: 'strong'},
               {title: 'Italic', value: 'em'},
             ],
@@ -50,11 +56,13 @@ export const englishTranslationType = defineType({
                 name: 'Original Latin Term',
                 type: 'object',
                 fields: [{name: 'term', type: 'string'}],
+                icon: () => 'Lat',
               },
               {
                 name: 'Translation Note',
                 type: 'object',
                 fields: [{name: 'note', type: 'string'}],
+                icon: LuMessageCircle,
               },
             ],
           },
