@@ -1,5 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
+// Components
+import FolioReference from '../components/decorators/FolioReference/FolioReference.jsx'
+
 export const englishTranslationType = defineType({
   name: 'englishTranslation',
   title: 'English Translation',
@@ -33,7 +36,16 @@ export const englishTranslationType = defineType({
     defineField({
       name: 'body',
       type: 'array',
-      of: [{type: 'block'}],
+      of: [
+        {
+          type: 'block',
+          marks: {
+            decorators: [
+              {title: 'Folio Reference', value: 'folioReference', component: FolioReference},
+            ],
+          },
+        },
+      ],
     }),
   ],
 })
