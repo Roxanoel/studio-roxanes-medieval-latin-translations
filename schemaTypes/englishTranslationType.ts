@@ -42,6 +42,15 @@ export const englishTranslationType = defineType({
           marks: {
             decorators: [
               {title: 'Folio Reference', value: 'folioReference', component: FolioReference},
+              {title: 'Bold', value: 'strong'},
+              {title: 'Italic', value: 'em'},
+            ],
+            annotations: [
+              {
+                name: 'Original Latin Term',
+                type: 'object',
+                fields: [{name: 'term', type: 'string'}],
+              },
             ],
           },
         },
