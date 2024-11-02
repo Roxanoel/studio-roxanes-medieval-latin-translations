@@ -51,6 +51,11 @@ export const englishTranslationType = defineType({
                 type: 'object',
                 fields: [{name: 'term', type: 'string'}],
               },
+              {
+                name: 'Translation Note',
+                type: 'object',
+                fields: [{name: 'note', type: 'string'}],
+              },
             ],
           },
         },
