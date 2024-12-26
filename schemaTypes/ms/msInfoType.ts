@@ -16,8 +16,9 @@ export const msInfoType = defineType({
     }),
     defineField({
       name: 'author',
-      type: 'reference',
-      to: [{type: 'msAuthor'}],
+      type: 'string',
+      // type: 'reference',
+      // to: [{type: 'msAuthor'}],
     }),
     defineField({
       name: 'editor',
