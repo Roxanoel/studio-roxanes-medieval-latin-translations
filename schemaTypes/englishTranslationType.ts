@@ -3,6 +3,7 @@ import {LuFileDigit, LuMessageCircle} from 'react-icons/lu'
 
 // Components
 import FolioReference from '../components/decorators/FolioReference/FolioReference.jsx'
+import FolioReference from '../components/decorators/FolioReference/FolioReference'
 
 export const englishTranslationType = defineType({
   name: 'englishTranslation',
