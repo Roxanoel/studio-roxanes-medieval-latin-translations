@@ -35,14 +35,16 @@ export const chapterType = defineType({
             ],
             annotations: [
               {
-                name: 'Original Latin Term',
+                name: 'originalLatinTerm',
                 type: 'object',
+                title: 'Add Original Latin Term',
                 fields: [{name: 'term', type: 'string'}],
                 icon: () => 'Lat',
               },
               {
-                name: 'Translation Note',
+                name: 'translationNote',
                 type: 'object',
+                title: 'Translation Note',
                 fields: [{name: 'note', type: 'string'}],
                 icon: LuMessageCircle,
               },
