@@ -1,8 +1,9 @@
 import {defineField, defineType} from 'sanity'
-import {LuFileDigit, LuMessageCircle} from 'react-icons/lu'
+import {LuFileDigit, LuMessageCircle, LuConstruction} from 'react-icons/lu'
 
 // Components
 import FolioReference from '../components/decorators/FolioReference/FolioReference'
+import TranslationInProgress from '../components/decorators/TranslationInProgress/TranslationInProgress'
 
 export const chapterType = defineType({
   name: 'chapter',
@@ -29,6 +30,12 @@ export const chapterType = defineType({
                 value: 'folioReference',
                 component: FolioReference,
                 icon: LuFileDigit,
+              },
+              {
+                title: 'Translation in Progress',
+                value: 'inProgress',
+                component: TranslationInProgress,
+                icon: LuConstruction,
               },
               {title: 'Bold', value: 'strong'},
               {title: 'Italic', value: 'em'},

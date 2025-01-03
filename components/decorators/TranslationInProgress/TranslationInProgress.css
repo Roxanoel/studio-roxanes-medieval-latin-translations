@@ -1,0 +1,13 @@
+.in-progress {
+  background-color: #ff000032;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
+  color: #610303;
+}
+
+@media (prefers-color-scheme: dark) {
+  .in-progress {
+    color: #ff0000;
+  }
+}
